@@ -1,0 +1,145 @@
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  background-color: #19202E;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 100;
+}
+
+#inside {
+  position: absolute;
+  z-index: 10;
+  margin: 0 auto;
+  /* margin-left: 300px;  */
+}
+
+/* ---- stats.js ---- */
+/* 
+.count-particles{
+  background: #2020100;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+} */
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+.text-margin{
+  margin-top: 170px;
+}
+.banner-txt{
+  font-size: 46px;
+  font-weight: 600;
+}
+.text-margin-subline{
+  /* margin-left: 43px; */
+  font-size: 21px;
+  color: #fff;
+  margin-top: -11px;
+  /* margin-left: 18px; */
+}
+.tag-line {
+  margin-left: 42px;
+  font-size: 10px;
+  letter-spacing:4px;
+  font-weight: bolder;
+  background: linear-gradient(
+            to right, rgb(197, 21, 21), #0dd672,
+             #697c8d, #abe410);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+}
+.wrapper{
+  display: inline flex;
+}
+.wrapper .static-txt {
+  color: #fff;
+  font-size: 10px;
+}
+
+.wrapper .dynamic-txt{
+  
+}
+ul.dynamic-txt {
+  margin-left: -38px;
+  height: 0;
+}
+.dynamic-txt li{
+  color: #000;
+  list-style: none;
+  font-size: 10px;
+  margin-left: -10;
+}
+.dynamic-txt li span {
+  position: relative;
+}
+.dynamic-txt li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  border-left: 2px solid #fff;
+  animation: typing 2s steps(16) infinite;
+}
+@keyframes typing {
+  100%{
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+.about-margin{
+  margin-top: 80px;
+}
+.service-margin{
+  margin-top: 56px;
+}
+.team-margin{
+  margin-top: 8px;
+}
